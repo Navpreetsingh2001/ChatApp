@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRv"
+        android:layout_width="357dp"
+        android:layout_height="318dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        tools:layout_editor_absoluteX="16dp">
+
+        <EditText
+            android:id="@+id/messageBox"
+            android:layout_width="wrap_content"
+            android:background="@drawable/message_box_background"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Type a Message...."
+            android:layout_weight="88"
+            />
+
+        <ImageView
+            android:id="@+id/btnSent"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_weight="12"
+            android:background="@drawable/baseline_send_24" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
