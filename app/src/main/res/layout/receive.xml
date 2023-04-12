@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_margin="10sp"
+    android:layout_marginBottom="12dp"
     android:layout_height="wrap_content">
 
     <RelativeLayout
@@ -21,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
+            android:textColor="@color/black"
             android:text="This is receive message"
             android:padding="10dp"
             android:textSize="18sp"

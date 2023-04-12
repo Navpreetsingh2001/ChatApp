@@ -3,6 +3,7 @@ package com.example.chatapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.chatapp.databinding.ActivityChatBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -65,6 +66,9 @@ class ChatActivity : AppCompatActivity() {
 
         //adding the message to database
         binding.btnSent.setOnClickListener {
+            if (binding.messageBox.text.toString() == ""){
+                Toast.makeText(this, "Enter text", Toast.LENGTH_SHORT).show()
+            }
             val message = binding.messageBox.text.toString()
             val messageObject =Message(message,senderUid)
 

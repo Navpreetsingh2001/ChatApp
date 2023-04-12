@@ -15,9 +15,6 @@ class SignUp : AppCompatActivity() {
     private lateinit var mAuth: FirebaseAuth
     private  lateinit var mdbRef:DatabaseReference
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
@@ -27,6 +24,11 @@ class SignUp : AppCompatActivity() {
         supportActionBar?.hide()
 
 
+        binding.tvAlreadyHaveAccount.setOnClickListener {
+            var intent =Intent(this,Login::class.java)
+            startActivity(intent)
+            finish()
+        }
         binding.btnSignup.setOnClickListener {
             val name =binding.etName.text.toString()
             val email = binding.etEmail.text.toString()

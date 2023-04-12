@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_margin="10sp"
+    android:layout_marginBottom="12dp"
     android:layout_height="wrap_content">
 
     <RelativeLayout
@@ -24,7 +25,7 @@
             android:layout_marginStart="36dp"
             android:text="This is send message"
             android:padding="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="18sp"
              />
 

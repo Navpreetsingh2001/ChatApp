@@ -9,6 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="skyBlue">#25B7D3</color>
     <color name="homeBackground">#505252</color>
+    <color name="grey">#D8DADA</color>
+
+    <color name="main">#8861CC</color>
+    <color name="lightmain">#A388D3</color>
+    <color name="button_Background">#504464</color>
 <!--    <color name="white">#FFFFFFFF</color>-->
 
 </resources>

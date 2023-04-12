@@ -12,14 +12,8 @@
         android:theme="@style/Theme.Chatapp"
         tools:targetApi="31">
         <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignUp"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="true">
+            android:name=".splash"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +21,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ChatActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:exported="true"
+            android:label="sign">
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
